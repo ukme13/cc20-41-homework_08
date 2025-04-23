@@ -1,0 +1,462 @@
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-sh-0 {
+  flex-shrink: 0;
+}
+
+.flex-sh-1 {
+  flex-shrink: 1;
+}
+
+.gap-small {
+  gap: 8px;
+}
+
+.gap-Xsmall {
+  gap: 4px;
+}
+
+.gap-XXsmall {
+  gap: 2px;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.c-pri {
+  color: var(--color-primary);
+}
+
+.c-text-dis {
+  color: var(--color-text-disabled);
+}
+
+.c-t-sec {
+  color: var(--color-text-secondary);
+}
+
+
+
+.mg-tb-xs {
+  margin-top: 5px;
+  margin-bottom: 5px; 
+}
+
+.mg-tb--xs {
+  margin-top: -5px;
+  margin-bottom: -5px; 
+}
+
+.ovf-h{
+  overflow: hidden;
+}
+
+h5{
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.subtitle3 {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.ellipsis {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.min-w-0 {
+  min-width: 0; /*Allows it to shrink in a flex layout*/
+}
+
+a.textBtn-s {
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.postCard {
+  width: 590px;
+  height: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px #00000012;
+}
+
+.profilePic {
+  width: 40px;
+  height: 40px;
+  background-image: url(./PicMe_41.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.profilePic-l {
+  width: 36px;
+  height: 36px;
+  background-image: url(./PicMe_41.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.profilePic-m {
+  width: 32px;
+  height: 32px;
+  background-image: url(./PicMe_41.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.nameDate {
+  margin-top: -5px;
+  margin-bottom: -5px;
+  flex: 1;
+}
+
+.nameGroup {
+  flex-wrap: nowrap;
+}
+
+.iconBtn-nodec {
+  width: 40px;
+  height: 40px;
+  color: var(--color-text);
+  font-size: 1.4rem;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.iconBtn-nodec:hover{
+  background-color: var(--color-ActionHover);
+}
+
+.icBtnHelper {
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: -106%;
+  color: var(--color-text);
+  padding: 8px;
+  background-color: var(--color-Action);
+  border-radius: 8px;
+  box-shadow: 0px 2px 2px var(--color-text-disabled);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.tab:hover .icon-wrapper .tabHelper,.iconBtn-nodec:hover .icBtnHelper,.iconImgBtn:hover .icBtnHelper {
+  opacity: 1;
+}
+
+.ratio1x1 {
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+.imgWrapperSQ img {
+  object-fit: cover;
+}
+
+.top {
+  height: 340px;
+  overflow: hidden;
+}
+
+.top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reactView{
+  width: 18px;
+}
+
+.reactBtn{
+  padding-top: 8px;
+  font-size: 15px;
+  font-weight:700;
+  padding-bottom: 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.reactBtn:hover {
+  background-color: var(--color-OutlineBorder);
+}
+
+
+
+.reactPreview {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.profileDropdown {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  font-size: .6rem;
+  font-weight: 600;
+  transform: translate(20%,0%);
+  width: 12px;
+  height: 12px;
+  color: var(--color-text);
+  background-color: #e4e6eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.contentSection {
+  width: 100%;
+  height: auto;
+  margin-top: 56px;
+  padding-right: 4px;
+  visibility: visible;
+  position: relative;
+}
+
+.CSLeft, .CSright {
+  position: sticky;
+  top: 56px;
+  max-width: 360px;
+  max-height: calc(100vh - 56px);
+  overflow-y: hidden;
+  transition: all 0.3s;
+}
+
+.CSright:hover, .CSright:hover {
+  overflow-y: auto;
+  transition: all 0.3s;
+}
+
+.testBox {
+  height: 150vh;
+  width: 100%;
+  background-color: var(--color-OutlineBorder);
+}
+
+.scroll-wrapper {
+  position: relative;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+}
+
+.scroll-content {
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.custom-scrollbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 9px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: opacity 0.3s;
+  opacity: 0;
+  z-index: 100;
+}
+
+.scroll-wrapper:hover .custom-scrollbar {
+  opacity: 1;
+}
+
+
+.navbar {
+  height: 56px;
+  box-shadow: inset 0 -1px 0px var(--color-OutlineBorder);
+  padding-inline: 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+.BrandLogo{
+  height: 2.6rem;
+}
+
+.tabGroup {
+  max-width: 400px;
+}
+
+.tab {
+  font-size: 1.25rem;
+  padding: 4px;
+  position: relative;
+}
+
+.icon-active {
+  display: none;
+  color: var(--color-primary);
+}
+
+.icon-default {
+  display: inline;
+  color: var(--color-text-secondary);
+}
+
+.icon-wrapper:hover {
+  background-color: var(--color-OutlineBorder);
+  border-radius: 8px;
+}
+
+.tab.active .icon-wrapper:hover{
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+.tab.active {
+  box-shadow: inset 0 -3px 0px var(--color-primary);
+}
+
+.tab.active .icon-active{
+  display: inline;
+}
+
+.tab.active .icon-default{
+  display: none;
+}
+
+.tabHelper {
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: -62%;
+  color: var(--color-text);
+  padding: 8px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  box-shadow: 0px 2px 2px var(--color-text-disabled);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tab:hover .icon-wrapper .tabHelper,.iconBtn:hover .icBtnHelper,.iconImgBtn:hover .icBtnHelper {
+  opacity: 1;
+  transition: opacity 0.4s 0.4s ease;
+}
+
+.iconBtn {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-OutlineBorder);
+  color: var(--color-text);
+  font-size: 1.4rem;
+  border-radius: 50%;
+}
+
+.iconImgBtn {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(139, 139, 139);
+  color: var(--color-text);
+  background-image: url(./PicMe_41.jpg);
+  background-size: cover;
+  font-size: 1.4rem;
+  border-radius: 50%;
+}
+
+.iconImgBtn:hover {
+  background-blend-mode: overlay;
+}
+
+.icBtnHelper {
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: -106%;
+  color: var(--color-text);
+  padding: 8px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  box-shadow: 0px 2px 2px var(--color-text-disabled);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+
+.iconBtn:hover{
+  background-color: var(--color-ActionHover);
+}
+
+.noti {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  font-size: .8rem;
+  font-weight: 600;
+  transform: translate(20%,-20%);
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.iconList {  
+  padding-right: 4px;
+}
+
+.iconList li {
+  height: 52px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 8px;
+}
+
+.iconList li:hover{
+  background-color: var(--color-OutlineBorder);
+}
+
+.netState {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: #4ac15c;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(0%,0%);
+}
+
+.icon-l {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-xl {
+  width: 36px;
+  height: 36px;
+}
+
+

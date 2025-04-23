@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-hw04.css" />
+    <title>FacebookNav</title>
+  </head>
+  <body>
+    
+    <section class="navbar flex-h">
+      <div class="nav-left flex-h w-100 flex-a-c gap-small">
+        <div><i class="fa-brands fa-facebook c-pri BrandLogo"></i></div>
+        <div class="search-wrapper pos-rel">
+          <input class="fbSearch" type="text" placeholder="ค้นหาบน Facebook" />
+          <i class="fa-solid fa-magnifying-glass c-text-dis moveMG"></i>
+        </div>
+      </div>
+
+      <div class="nav-center flex-h w-100 h-100 flex-j-c flex-a-c">
+        <div class="tabGroup w-100 h-100 flex-h">
+          <div class="tab w-100 h-100 active">
+            <div class="icon-wrapper w-100 h-100 flex-h flex-a-c flex-j-c">
+              <i class="fa-regular fa-house icon icon-default"></i>
+              <i class="fa-solid fa-house icon icon-active"></i>
+              <span class="tabHelper">Home</span>
+            </div>
+          </div>
+          <div class="tab w-100 h-100">
+            <div class="icon-wrapper w-100 h-100 flex-h flex-a-c flex-j-c">
+              <i class="fa-regular fa-video icon icon-default"></i>
+              <i class="fa-solid fa-video icon icon-active"></i>
+              <span class="tabHelper">Video</span>
+            </div>
+          </div>
+          <div class="tab w-100 h-100">
+            <div class="icon-wrapper w-100 h-100 flex-h flex-a-c flex-j-c">
+              <i class="fa-regular fa-people icon icon-default"></i>
+              <i class="fa-solid fa-people icon icon-active"></i>
+              <span class="tabHelper">Groups</span>
+            </div>
+          </div>
+          <div class="tab w-100 h-100">
+            <div class="icon-wrapper w-100 h-100 flex-h flex-a-c flex-j-c">
+              <i class="fa-regular fa-gamepad icon icon-default"></i>
+              <i class="fa-solid fa-gamepad icon icon-active"></i>
+              <span class="tabHelper">Gaming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-right flex-h w-100 flex-j-e flex-a-c gap-small pos-rel">
+        <div class="iconBtn flex-h flex-j-c flex-a-c pos-rel">
+          <i class="fa-solid fa-grip-dots"></i>
+          <span class="icBtnHelper">Menu</span>
+        </div>
+        <div class="iconBtn flex-h flex-j-c flex-a-c pos-rel">
+          <i class="fa-brands fa-facebook-messenger"></i>
+          <span class="icBtnHelper">Messenger</span>
+        </div>
+        <div class="iconBtn flex-h flex-j-c flex-a-c pos-rel">
+          <i class="fa-solid fa-bell"></i>
+          <span class="icBtnHelper">Notifications</span>
+          <span class="check noti">6</span>
+        </div>
+        <div class="iconImgBtn flex-h flex-j-c flex-a-c pos-rel">
+          <!-- <i class="fa-solid fa-grip-dots "></i> -->
+          <span class="icBtnHelper right-0">Account</span>
+          <span class="profileDropdown"
+            ><i class="fa-solid fa-chevron-down"></i
+          ></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contentSection flex-h flex-j-c gap-small pos-rel">
+      <div class="CSLeft flex-grow-1">
+        <div class="scroll-wrapper">
+          <div class="scroll-content pd-l-m" id="scrollContent">
+            <div>
+              <ul class="iconList flex-v mg-t-l">
+                <li class="flex-h flex-a-c gap-small pd-il-s ">
+                  <div class="profilePic-l pos-rel"></div>
+                  <span class="body-1"><strong>Ukrit Meeklin</strong> </span>
+                </li> 
+                <li class="flex-h flex-a-c gap-small pd-il-s ">
+                  <img src="./pics/MetaAi.png" alt="" class="icon-xl">
+                  <span class="body-1"><strong>Meta Ai</strong> </span>
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-s ">
+                  <img src="./pics/Friends.png" alt="" class="icon-xl">
+                  <span class="body-1"><strong>Friends</strong> </span>
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-s ">
+                  <img src="./pics/Saved.png" alt="" class="icon-xl">
+                  <span class="body-1"><strong>Saved</strong> </span>
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-s ">
+                  <img src="./pics/Memories.png" alt="" class="icon-xl">
+                  <span class="body-1"><strong>Memories</strong> </span>
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-s ">
+                  <img src="./pics/Group.png" alt="" class="icon-xl">
+                  <span class="body-1"><strong>Groups</strong> </span>
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-s ">
+                  <img src="./pics/Video.png" alt="" class="icon-xl">
+                  <span class="body-1"><strong>Video</strong> </span>
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-s mg-b-sm">
+                  <img src="./pics/Marketplace.png" alt="" class="icon-xl">
+                  <span class="body-1"><strong>Marketplace</strong> </span>
+                </li>     
+                          
+                <hr class="mg-b-sm">
+                <span class="subtitle-2 mg-b-sm c-t-sec">Your Shortcuts</span>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Ukrit Meeklin
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Nattapong Chaiyaporn
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Chanikan Rattanapong
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Kittisak Wongrattana
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Waranya Srisawat
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Phuwadol Thongchai
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Siriporn Maneechai
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Anurak Boonmee
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Supaporn Pradchaphet
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Thanakorn Yodphet
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Ratchanok Kamsing
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Chaiwat Intarasuwan
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Juthamas Khampan
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Boonmee Rungrotchai
+                </li>                
+              </ul>
+            </div>
+          </div>
+          <div class="custom-scrollbar" id="customScrollbar"></div>
+        </div>
+      </div>
+
+      <div class="pd-m flex-grow-1 flex-v flex-a-c gap-l">
+        <div class="postCard">
+          <div
+            class="Header gap-small pd-il-m pd-t-m mg-b-m flex-h flex-a-c w-100"
+          >
+            <div class="profilePic"></div>
+            <div class="nameDate flex-v flex-j-c gap-XXsmall mg-tb--xs min-w-0">
+              <div class="nameGroup flex-h gap-Xsmall min-w-0">
+                <h5 class="ellipsis">Ukrit Meeklin</h5>
+                <h5 class="flex-sh-0">·</h5>
+                <a href="#" class="textBtn-s flex-sh-0">ติดตาม</a>
+              </div>
+              <div class="timeStamp flex-h gap-XXsmall c-t-sec">
+                <span class="subtitle3">17h</span>
+                <span class="subtitle3">·</span>
+                <i class="fa-solid fa-earth-americas subtitle3"></i>
+              </div>
+            </div>
+            <div class="btnGroup flex-h">
+              <div class="iconBtn-nodec flex-h flex-j-c flex-a-c pos-rel">
+                <i class="fa-solid fa-ellipsis c-t-sec"></i>
+                <!-- <span class="check icBtnHelper">Notifications</span> -->
+              </div>
+              <div class="iconBtn-nodec flex-h flex-j-c flex-a-c pos-rel">
+                <i class="fa-solid fa-xmark c-t-sec"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="context pd-il-m mg-b-m">
+            อุโมงค์ต้นสักทอง ในตำนาน 😃 <br />&lt;&lt; ทล.108 บ้านแม่ลาหลวง -
+            แม่ลาน้อย
+          </div>
+
+          <div class="gallery flex flex-v gap-Xsmall mg-b-s">
+            <div class="top w-100 h-100">
+              <img src="./pics/01.jpg" alt="" class="w-100" />
+            </div>
+            <div class="bottom w-100 flex-h gap-Xsmall">
+              <div class="imgWrapperSQ flex-grow-1 ratio1x1 pos-rel">
+                <img src="./pics/02.jpg" alt="" class="w-100 h-100" />
+              </div>
+              <div class="imgWrapperSQ flex-grow-1 ratio1x1 pos-rel">
+                <img src="./pics/03.jpg" alt="" class="w-100 h-100" />
+              </div>
+              <div class="imgWrapperSQ flex-grow-1 ratio1x1 pos-rel">
+                <img src="./pics/04.jpg" alt="" class="w-100 h-100" />
+              </div>
+            </div>
+          </div>
+
+          <div class="reaction flex-v pd-il-m mg-b-s">
+            <div class="reactPreview flex-h mg-b-sm">
+              <div class="flex-h gap-Xsmall c-t-sec flex-grow-1">
+                <img src="./pics/Like.svg" alt="" class="reactView" />
+                1.8 พัน
+              </div>
+              <div class="flex-h c-t-sec gap-small">
+                <span>63 ความคิดเห็น</span>
+                <span>แชร์ 58 ครั้ง</span>
+              </div>
+            </div>
+            <hr class="mg-b-s" />
+            <div class="reactGrp c-t-sec flex-h gap-Xsmall">
+              <div
+                class="reactBtn gap-small flex-h flex-a-c flex-j-c flex-grow-1 w-100"
+              >
+                <i class="fa-regular fa-thumbs-up"></i>
+                <span>ถูกใจ</span>
+              </div>
+              <div
+                class="reactBtn gap-small flex-h flex-a-c flex-j-c flex-grow-1 w-100"
+              >
+                <i class="fa-regular fa-comment"></i>
+                <span>แสดงความคิดเห็น</span>
+              </div>
+              <div
+                class="reactBtn gap-small flex-h flex-a-c flex-j-c flex-grow-1 w-100"
+              >
+                <i class="fa-regular fa-share"></i>
+                <span>แชร์</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="postCard">
+          <div
+            class="Header gap-small pd-il-m pd-t-m mg-b-m flex-h flex-a-c w-100"
+          >
+            <div class="profilePic"></div>
+            <div class="nameDate flex-v flex-j-c gap-XXsmall mg-tb--xs min-w-0">
+              <div class="nameGroup flex-h gap-Xsmall min-w-0">
+                <h5 class="ellipsis">Ukrit Meeklin</h5>
+                <h5 class="flex-sh-0">·</h5>
+                <a href="#" class="textBtn-s flex-sh-0">ติดตาม</a>
+              </div>
+              <div class="timeStamp flex-h gap-XXsmall c-t-sec">
+                <span class="subtitle3">16 April at 10:14</span>
+                <span class="subtitle3">·</span>
+                <i class="fa-solid fa-earth-americas subtitle3"></i>
+              </div>
+            </div>
+            <div class="btnGroup flex-h">
+              <div class="iconBtn-nodec flex-h flex-j-c flex-a-c pos-rel">
+                <i class="fa-solid fa-ellipsis c-t-sec"></i>
+                <!-- <span class="check icBtnHelper">Notifications</span> -->
+              </div>
+              <div class="iconBtn-nodec flex-h flex-j-c flex-a-c pos-rel">
+                <i class="fa-solid fa-xmark c-t-sec"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="context pd-il-m mg-b-m">
+            หมดสงกรานต์ ก็กลับปาย<br />กลับปายทำงานต่อจ้าว  🤣<br />
+            <a href="https://www.facebook.com/share/p/1CVNrQPTrx/" target="_blank">#เที่ยวแม่ฮ่องสอน</a>
+          </div>
+
+          <div class="gallery flex flex-v gap-Xsmall mg-b-s">
+            <div class="top w-100 h-100">
+              <img src="./pics/05.jpg" alt="" class="w-100" />
+            </div>
+          </div>
+
+          <div class="reaction flex-v pd-il-m mg-b-s">
+            <div class="reactPreview flex-h mg-b-sm">
+              <div class="flex-h gap-Xsmall c-t-sec flex-grow-1">
+                <img src="./pics/Like.svg" alt="" class="reactView" />
+                394
+              </div>
+              <div class="flex-h c-t-sec gap-small">
+                <!-- <span>63 ความคิดเห็น</span> -->
+                <span>แชร์ 5 ครั้ง</span>
+              </div>
+            </div>
+            <hr class="mg-b-s" />
+            <div class="reactGrp c-t-sec flex-h gap-Xsmall">
+              <div
+                class="reactBtn gap-small flex-h flex-a-c flex-j-c flex-grow-1 w-100"
+              >
+                <i class="fa-regular fa-thumbs-up"></i>
+                <span>ถูกใจ</span>
+              </div>
+              <div
+                class="reactBtn gap-small flex-h flex-a-c flex-j-c flex-grow-1 w-100"
+              >
+                <i class="fa-regular fa-comment"></i>
+                <span>แสดงความคิดเห็น</span>
+              </div>
+              <div
+                class="reactBtn gap-small flex-h flex-a-c flex-j-c flex-grow-1 w-100"
+              >
+                <i class="fa-regular fa-share"></i>
+                <span>แชร์</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="postCard">
+          <div
+            class="Header gap-small pd-il-m pd-t-m mg-b-m flex-h flex-a-c w-100"
+          >
+            <div class="profilePic"></div>
+            <div class="nameDate flex-v flex-j-c gap-XXsmall mg-tb--xs min-w-0">
+              <div class="nameGroup flex-h gap-Xsmall min-w-0">
+                <h5 class="ellipsis">Ukrit Meeklin</h5>
+                <h5 class="flex-sh-0">·</h5>
+                <a href="#" class="textBtn-s flex-sh-0">ติดตาม</a>
+              </div>
+              <div class="timeStamp flex-h gap-XXsmall c-t-sec">
+                <span class="subtitle3">20 April at 21:25</span>
+                <span class="subtitle3">·</span>
+                <i class="fa-solid fa-earth-americas subtitle3"></i>
+              </div>
+            </div>
+            <div class="btnGroup flex-h">
+              <div class="iconBtn-nodec flex-h flex-j-c flex-a-c pos-rel">
+                <i class="fa-solid fa-ellipsis c-t-sec"></i>
+                <!-- <span class="check icBtnHelper">Notifications</span> -->
+              </div>
+              <div class="iconBtn-nodec flex-h flex-j-c flex-a-c pos-rel">
+                <i class="fa-solid fa-xmark c-t-sec"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="context pd-il-m mg-b-m">
+            ประตูเมืองเปิด บ่าเกยปิด<br />อยากพิชิต 1,864 โก้ง เมื่อไหร่ก็มาจ้าว ☺️<br />
+            <a href="https://www.facebook.com/share/p/1CVNrQPTrx/" target="_blank">#เที่ยวแม่ฮ่องสอน</a>
+          </div>
+
+          <div class="gallery flex flex-v gap-Xsmall mg-b-s">
+            <div class="top w-100 h-100">
+              <img src="./pics/06.jpg" alt="" class="w-100" />
+            </div>
+          </div>
+
+          <div class="reaction flex-v pd-il-m mg-b-s">
+            <div class="reactPreview flex-h mg-b-sm">
+              <div class="flex-h gap-Xsmall c-t-sec flex-grow-1">
+                <img src="./pics/Like.svg" alt="" class="reactView" />
+                326
+              </div>
+              <div class="flex-h c-t-sec gap-small">
+                <span>16 ความคิดเห็น</span>
+                <span>แชร์ 7 ครั้ง</span>
+              </div>
+            </div>
+            <hr class="mg-b-s" />
+            <div class="reactGrp c-t-sec flex-h gap-Xsmall">
+              <div
+                class="reactBtn gap-small flex-h flex-a-c flex-j-c flex-grow-1 w-100"
+              >
+                <i class="fa-regular fa-thumbs-up"></i>
+                <span>ถูกใจ</span>
+              </div>
+              <div
+                class="reactBtn gap-small flex-h flex-a-c flex-j-c flex-grow-1 w-100"
+              >
+                <i class="fa-regular fa-comment"></i>
+                <span>แสดงความคิดเห็น</span>
+              </div>
+              <div
+                class="reactBtn gap-small flex-h flex-a-c flex-j-c flex-grow-1 w-100"
+              >
+                <i class="fa-regular fa-share"></i>
+                <span>แชร์</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <divW class="CSLeft flex-grow-1">
+        <div class="scroll-wrapper">
+          <div class="scroll-content" id="scrollContentR">
+            <div>
+              <ul class="iconList flex-v mg-t-xxl">
+                <span class="subtitle-2 mg-b-sm c-t-sec">Birthdays</span>
+                <li class="flex-h flex-a-c gap-small pd-il-m mg-b-sm">
+                  <img src="./pics/giftBD.png" alt="" class="icon-l">
+                  <span class="body-1"><strong>Chayapol Limanon</strong> 's birthday is today.</span>
+                </li>                
+                <hr class="mg-b-sm">
+                <span class="subtitle-2 mg-b-sm c-t-sec">Contacts</span>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Ukrit Meeklin
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Nattapong Chaiyaporn
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Chanikan Rattanapong
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Kittisak Wongrattana
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Waranya Srisawat
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Phuwadol Thongchai
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Siriporn Maneechai
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Anurak Boonmee
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Supaporn Pradchaphet
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Thanakorn Yodphet
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Ratchanok Kamsing
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Chaiwat Intarasuwan
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Juthamas Khampan
+                </li>
+                <li class="flex-h flex-a-c gap-small pd-il-m">
+                  <div class="profilePic-m pos-rel"><div class="check netState"></div></div>                  
+                  Boonmee Rungrotchai
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="custom-scrollbar" id="customScrollbarR"></div>
+        </div>
+      </divW>
+    </section>
+  </body>
+
+  <script
+    src="https://kit.fontawesome.com/4a809a4c74.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    const tabs = document.querySelectorAll(".tab");
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+      });
+    });
+  </script>
+
+  <script>
+    const content = document.getElementById("scrollContent");
+    const scrollbar = document.getElementById("customScrollbar");
+
+    function updateScrollbar() {
+      const visibleHeight = content.clientHeight;
+      const contentHeight = content.scrollHeight;
+      const scrollTop = content.scrollTop;
+
+      // Only show scrollbar if content is overflowing
+    if (contentHeight > visibleHeight) {
+      scrollbar.style.display = 'block';
+
+      const scrollbarHeight = visibleHeight * (visibleHeight / contentHeight);
+      const scrollbarTop = scrollTop * (visibleHeight / contentHeight);
+
+      scrollbar.style.height = `${scrollbarHeight}px`;
+      scrollbar.style.top = `${scrollbarTop}px`;
+    } else {
+      scrollbar.style.display = 'none';
+    }
+  }
+
+    content.addEventListener("scroll", updateScrollbar);
+    window.addEventListener("resize", updateScrollbar);
+    window.addEventListener("load", updateScrollbar);
+  </script>
+
+<script>
+  const content1 = document.getElementById("scrollContentR");
+  const scrollbar1 = document.getElementById("customScrollbarR");
+
+  function updateScrollbar() {
+    const visibleHeight = content1.clientHeight;
+    const contentHeight = content1.scrollHeight;
+    const scrollTop = content1.scrollTop;
+
+    // Only show scrollbar if content is overflowing
+    if (contentHeight > visibleHeight) {
+      scrollbar1.style.display = 'block';
+
+      const scrollbarHeight = visibleHeight * (visibleHeight / contentHeight);
+      const scrollbarTop = scrollTop * (visibleHeight / contentHeight);
+
+      scrollbar1.style.height = `${scrollbarHeight}px`;
+      scrollbar1.style.top = `${scrollbarTop}px`;
+    } else {
+      scrollbar1.style.display = 'none';
+    }
+  }
+
+  content1.addEventListener("scroll", updateScrollbar);
+  window.addEventListener("resize", updateScrollbar);
+  window.addEventListener("load", updateScrollbar);
+</script>
+</html>
